@@ -1,6 +1,18 @@
 #include <not_implemented.h>
 
 #include "../include/server_logger.h"
+// my own includes
+
+#ifdef __linux__
+#include <sys/msg.h>
+#endif
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
+#include <cstring>
+#include <unistd.h>
 
 server_logger::server_logger(
     server_logger const &other)

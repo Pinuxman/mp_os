@@ -4,7 +4,7 @@
 
 client_logger_builder::client_logger_builder()
 {
-    throw not_implemented("client_logger_builder::client_logger_builder()", "your code should be here...");
+    this->opt = "%d %t %s %m";
 }
 
 client_logger_builder::client_logger_builder(
