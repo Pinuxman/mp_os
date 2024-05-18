@@ -4,7 +4,7 @@
 
 client_logger_builder::client_logger_builder()
 {
-    this->opt = "%d %t %s %m";
+    _formated_data("\%t \%d \%s \%m")
 }
 
 client_logger_builder::client_logger_builder(
